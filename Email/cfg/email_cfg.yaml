@@ -1,0 +1,20 @@
+csv: ../data/sample.csv
+
+From: mine.mail.444@gmail.com
+CC: mine.mail.444@gmail.com
+
+Subject: Test3
+
+Body: ../data/body.txt
+
+
+
+Header:
+  width: 160
+  height: 100
+  src: ../data/sample.PNG
+  id: image1
+
+Attachment: 
+  src:
+  name:
