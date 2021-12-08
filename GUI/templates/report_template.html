@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>{{page_title_text}}</title>
+    </head>
+    <body>
+        <div>
+            <h1>{{title_text}}</h1>
+            <p>{{text}}</p>
+            <h2>試験目メタデータ</h2>
+            {{report_summary.to_html()}}
+            <h2>項目パラメータ</h2>
+            <img src="../report/item_params.png" alt="" >
+            {{item_params.to_html()}}
+        </div>
+
+        <div>
+            <h2>対象パラメータ</h2>
+            {{user_params.to_html()}}
+        </div>
+        <img src="../report/user_params.png" alt="" >
+
+    </body>
+</html>

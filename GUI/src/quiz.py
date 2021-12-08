@@ -3,11 +3,11 @@ import PySimpleGUI as sg
 import numpy as np
 import pandas as pd
 from table import table_example
+from irt import run_irt
 
-
-table_layout = table_example()
 
 def quiz():
+    table_layout = table_example()
 
     col = [f"item{x+1}" for x in range(4)]
 
@@ -26,32 +26,30 @@ def quiz():
         ['4. What is the name of the author?', ['A. Adrian', 'B. Sasaki', 'C. Minami', 'D. Peter']]
         ]
 
-    # make Header larger
-    layout = [[sg.Text('現代テスト理論デモ', font='ANY 15', size=(30, 2))]]
+    layout = [[sg.Text('現代テスト理論デモ', font='ANY 12', size=(30, 1))]]
 
-    # "generate" the layout for the window based on the Question and Answer information
     for idx, qa in enumerate(q_and_a):
         q = qa[0]
         a_list = qa[1]
-        layout += [[sg.Text(q)]] + [[sg.Radio(a, group_id=q, key=f"Q{idx}A{idx2}")]
-                                 for idx2, a in enumerate(a_list)] + [[sg.Text('_' * 50)]]
+        layout += [[sg.Text(q, font="ANY 12 underline")]] + [[sg.Radio(a, group_id=q, key=f"Q{idx}A{idx2}")]
+                                 for idx2, a in enumerate(a_list)] #+ [[sg.Text('_' * 50)]]
 
-    layout += [[sg.Button('Submit', key='SUBMIT', button_color="Green"), sg.Button('Random', key='RANDOM', button_color="Blue")]]
-    layout += [[sg.Button('EXIT', key='EXIT', button_color="Red")]]
+    layout += [[sg.Button('Submit', key='SUBMIT', button_color="Green"), sg.Button('Random', key='RANDOM', button_color="Blue"), sg.Button('EXIT', key='EXIT', button_color="Red")]]
 
     col1 = layout
     col2 = [
         [sg.Text("データベース", font='ANY 12', size=(20, 1), justification='center')],
-        [table_layout]
+        [table_layout],
+        [sg.Button("分析", size=(10, 1), font=('Meiryo UI', 9), enable_events=True, key="-irt-")]
     ]
 
 
     full_layout = [
-        [sg.Column(col1), sg.Column(col2)],
+        [sg.Column(col1), sg.Column(col2, element_justification="center")],
     ]
 
 
-    quiz_window = sg.Window('Multiple Choice Test', full_layout, return_keyboard_events=True)
+    quiz_window = sg.Window('試験画面', full_layout, return_keyboard_events=True)
 
     while True:  # Event Loop
         event, values = quiz_window.read()
@@ -64,20 +62,27 @@ def quiz():
                 else:
                     placeholder[idx] = 0
             
-            df[f"try_{str(cnt+1).zfill(2)}"] = placeholder.astype(int)
+            df[f"num_{str(cnt+1).zfill(2)}"] = placeholder.astype(int)
             
             df.to_csv("../data/sample.csv", index=False)
             quiz_window["table"].update(values=df.T.values.tolist())
             cnt += 1
             
         elif event in (sg.WIN_CLOSED, 'EXIT', "Escape:27"):
-            ret = True
-            break
+            logout_ret = sg.PopupOKCancel("ログアウトしますか？", title="ログアウト確認", keep_on_top=True)
+            if logout_ret == "OK":
+                ret = True
+                break
+            else:
+                continue
         elif event in ['RANDOM', 'r']:
             for u in range(4):
                 rn_q = np.random.randint(0, 4)
                 quiz_window.Element(f"Q{u}A{rn_q}").Update(value=True)
             
+        elif event in ["-irt-"]:
+            run_irt(data=df)
+        
     quiz_window.close()
     return ret
     
