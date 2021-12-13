@@ -26,11 +26,13 @@ def vis_wordcloud(wc):
     plt.tight_layout(pad = 0)
     plt.show()
 
-def create_wordcloud(text):    
+def create_wordcloud(text):   
+    STOPWORDS = ["の", "です", "だ", "する", "します", "。", "、", "ず", "は", "で"] 
     stopwords = set(STOPWORDS)
     wordcloud = WordCloud(width = 800, height = 800,
                     background_color ='white',
                     stopwords = stopwords,
+                    font_path="../Noto_Sans_JP/NotoSansJP-Black.otf",
                     min_font_size = 10)
     wc = wordcloud.generate(text)
     return wc
