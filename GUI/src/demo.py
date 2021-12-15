@@ -65,7 +65,7 @@ def display_main() -> Optional[bool]:
 sg.theme("DarkGrey14")
 
 import cv2
-logo = cv2.imread("assets/aifield.png")
+logo = cv2.imread("../assets/aifield.png")
 logo = cv2.resize(logo, (200,100))
 logo = cv2.cvtColor(logo, cv2.COLOR_RGB2RGBA)
 import numpy as np

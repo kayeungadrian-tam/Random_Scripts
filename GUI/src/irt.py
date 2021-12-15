@@ -114,7 +114,7 @@ def show_html(item_params, user_df, df):
 
     import webbrowser
     new = 2 # open in a new tab, if possible
-    url = r"file://C:\Users\kayeungadrian.tam.mr\Desktop\github\Random_Scripts\GUI\report\report.html"
+    url = r"file://C:\Users\kayeungadrian.tam.mr\Desktop\Project\Random_Scripts\GUI\report\report.html"
     webbrowser.open(url,new=new)
 
 
