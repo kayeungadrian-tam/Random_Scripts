@@ -5,3 +5,5 @@
 *.css
 Bible/
 .pdf
+
+**/User_data

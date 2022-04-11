@@ -19,11 +19,12 @@ def list_section(sections, level=1):
         print(f"{'*'*level}\t{section.title}")
         list_section(section.sections, level=2)
 
-def vis_wordcloud(wc):
+def vis_wordcloud(wc, filename):
     plt.figure(figsize = (8, 8), facecolor = None)
     plt.imshow(wc)
     plt.axis("off")
     plt.tight_layout(pad = 0)
+    plt.savefig(f"wordcloud/{filename}.png")
     plt.show()
 
 def create_wordcloud(text):   
@@ -82,7 +83,7 @@ def main():
         
         wc = create_wordcloud(summary)
 
-        vis_wordcloud(wc)
+        vis_wordcloud(wc, serach_word)
     else:
         print(f"{bcolors.FAIL}ERROR 404: Page not found. {bcolors.ENDC}")
 

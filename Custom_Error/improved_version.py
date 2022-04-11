@@ -54,5 +54,5 @@ if __name__ == "__main__":
     try:
         1 + "str"
     except:
-        CustomError(simle_error)
+        CustomError(error_404)
     
