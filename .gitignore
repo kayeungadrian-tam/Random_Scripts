@@ -9,6 +9,11 @@ Bible/
 *.docx
 *.mkv
 *.pptx
+*.csv
+*.xlsx
+*.xls
+*.h5
+*.txt
 
 **/User_data
 
