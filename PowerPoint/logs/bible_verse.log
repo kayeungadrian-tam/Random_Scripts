@@ -1,0 +1,116 @@
+2022-04-23 17:02:18.901 | DEBUG    | __main__:case1:87 - Debugging single verse
+2022-04-23 17:02:24.848 | DEBUG    | __main__:case1:87 - Debugging single verse
+2022-04-23 17:02:26.984 | INFO     | __main__:case1:96 - Logging in...
+2022-04-23 17:02:33.064 | INFO     | __main__:case1:98 - Logged in.
+2022-04-23 17:02:33.066 | INFO     | __main__:case1:101 - Japanese verse: John 1:1
+2022-04-23 17:02:41.446 | INFO     | __main__:case1:103 - 初めにことばがあった。ことばは神とともにあった。ことばは神であった。
+2022-04-23 17:02:41.449 | INFO     | __main__:case1:105 - English verse: John 1:1
+2022-04-23 17:02:46.367 | INFO     | __main__:case1:107 - 1 In the beginning was the Word, and the Word was with God, and the Word was God.
+2022-04-23 17:02:46.371 | INFO     | __main__:case1:101 - Japanese verse: John 1:2
+2022-04-23 17:02:54.748 | INFO     | __main__:case1:103 - この方は、初めに神とともにおられた。
+2022-04-23 17:02:54.753 | INFO     | __main__:case1:105 - English verse: John 1:2
+2022-04-23 17:02:58.385 | INFO     | __main__:case1:107 - 2 He was in the beginning with God.
+2022-04-23 17:03:02.485 | DEBUG    | __main__:case2:110 - Debugging multi verse
+2022-04-23 17:03:04.598 | INFO     | __main__:case2:121 - Logging in...
+2022-04-23 17:03:10.994 | INFO     | __main__:case2:123 - Logged in.
+2022-04-23 17:03:11.001 | INFO     | __main__:case2:126 - Japanese verse: John 1:2
+2022-04-23 17:03:19.399 | INFO     | __main__:case2:128 - この方は、初めに神とともにおられた。
+2022-04-23 17:03:19.402 | INFO     | __main__:case2:130 - English verse: John 1:2
+2022-04-23 17:03:24.134 | INFO     | __main__:case2:132 - 2 He was in the beginning with God.
+2022-04-23 17:03:24.139 | INFO     | __main__:case2:126 - Japanese verse: John 1:3
+2022-04-23 17:03:32.493 | INFO     | __main__:case2:128 - すべてのものは、この方によって造られた。造られたもので、この方によらずにできたものは一つもなかった。
+2022-04-23 17:03:32.498 | INFO     | __main__:case2:130 - English verse: John 1:3
+2022-04-23 17:03:36.115 | INFO     | __main__:case2:132 - 3 All things were made through him, and without him was not any thing made that was made.
+2022-04-23 17:03:36.118 | INFO     | __main__:case2:126 - Japanese verse: John 1:4
+2022-04-23 17:03:44.468 | INFO     | __main__:case2:128 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:03:44.471 | INFO     | __main__:case2:130 - English verse: John 1:4
+2022-04-23 17:03:48.163 | INFO     | __main__:case2:132 - 4 In him was life,[a] and the life was the light of men.
+2022-04-23 17:03:48.166 | INFO     | __main__:case2:126 - Japanese verse: John 1:5
+2022-04-23 17:03:56.493 | INFO     | __main__:case2:128 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:03:56.496 | INFO     | __main__:case2:130 - English verse: John 1:5
+2022-04-23 17:04:00.082 | INFO     | __main__:case2:132 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:06:24.795 | DEBUG    | __main__:case1:96 - Debugging single verse
+2022-04-23 17:06:27.399 | INFO     | __main__:case1:105 - Logging in...
+2022-04-23 17:06:34.100 | INFO     | __main__:case1:107 - Logged in.
+2022-04-23 17:06:34.102 | INFO     | __main__:case1:110 - Japanese verse: John 1:4
+2022-04-23 17:06:42.516 | INFO     | __main__:case1:112 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:06:42.520 | INFO     | __main__:case1:114 - English verse: John 1:4
+2022-04-23 17:07:33.139 | DEBUG    | __main__:case1:95 - Debugging single verse
+2022-04-23 17:07:35.739 | INFO     | __main__:case1:104 - Logging in...
+2022-04-23 17:07:41.770 | INFO     | __main__:case1:106 - Logged in.
+2022-04-23 17:07:41.772 | INFO     | __main__:case1:109 - Japanese verse: John 1:4
+2022-04-23 17:07:50.158 | INFO     | __main__:case1:111 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:07:50.162 | INFO     | __main__:case1:113 - English verse: John 1:4
+2022-04-23 17:07:55.331 | INFO     | __main__:case1:115 - 4 In him was life, and the life was the light of men.
+2022-04-23 17:07:55.333 | INFO     | __main__:case1:109 - Japanese verse: John 1:5
+2022-04-23 17:08:03.698 | INFO     | __main__:case1:111 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:08:03.702 | INFO     | __main__:case1:113 - English verse: John 1:5
+2022-04-23 17:08:07.253 | INFO     | __main__:case1:115 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:11:22.967 | DEBUG    | __main__:case1:110 - Debugging single verse
+2022-04-23 17:11:25.592 | INFO     | __main__:case1:119 - Logging in...
+2022-04-23 17:11:31.711 | INFO     | __main__:case1:121 - Logged in.
+2022-04-23 17:11:31.716 | INFO     | __main__:case1:124 - Japanese verse: John 1:4
+2022-04-23 17:11:40.110 | INFO     | __main__:case1:126 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:11:40.114 | INFO     | __main__:case1:128 - English verse: John 1:4
+2022-04-23 17:11:53.047 | DEBUG    | __main__:case1:110 - Debugging single verse
+2022-04-23 17:12:07.760 | DEBUG    | __main__:case1:110 - Debugging single verse
+2022-04-23 17:12:10.297 | INFO     | __main__:case1:119 - Logging in...
+2022-04-23 17:12:16.049 | INFO     | __main__:case1:121 - Logged in.
+2022-04-23 17:12:16.053 | INFO     | __main__:case1:124 - Japanese verse: John 1:4
+2022-04-23 17:12:24.445 | INFO     | __main__:case1:126 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:12:24.449 | INFO     | __main__:case1:128 - English verse: John 1:4
+2022-04-23 17:12:29.311 | INFO     | __main__:case1:130 - 4 In him was life, and the life was the light of men.
+2022-04-23 17:12:29.316 | INFO     | __main__:case1:124 - Japanese verse: John 1:5
+2022-04-23 17:12:37.701 | INFO     | __main__:case1:126 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:12:37.704 | INFO     | __main__:case1:128 - English verse: John 1:5
+2022-04-23 17:12:41.407 | INFO     | __main__:case1:130 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:12:45.485 | DEBUG    | __main__:case2:133 - Debugging multi verse
+2022-04-23 17:12:47.558 | INFO     | __main__:case2:144 - Logging in...
+2022-04-23 17:12:53.582 | INFO     | __main__:case2:146 - Logged in.
+2022-04-23 17:12:53.588 | INFO     | __main__:case2:149 - Japanese verse: John 1:2
+2022-04-23 17:13:01.962 | INFO     | __main__:case2:151 - この方は、初めに神とともにおられた。
+2022-04-23 17:13:01.966 | INFO     | __main__:case2:153 - English verse: John 1:2
+2022-04-23 17:13:06.973 | INFO     | __main__:case2:155 - 2 He was in the beginning with God.
+2022-04-23 17:13:06.977 | INFO     | __main__:case2:149 - Japanese verse: John 1:3
+2022-04-23 17:13:15.335 | INFO     | __main__:case2:151 - すべてのものは、この方によって造られた。造られたもので、この方によらずにできたものは一つもなかった。
+2022-04-23 17:13:15.337 | INFO     | __main__:case2:153 - English verse: John 1:3
+2022-04-23 17:13:18.609 | INFO     | __main__:case2:155 - 3 All things were made through him, and without him was not any thing made that was made.
+2022-04-23 17:13:18.610 | INFO     | __main__:case2:149 - Japanese verse: John 1:4
+2022-04-23 17:13:26.948 | INFO     | __main__:case2:151 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:13:26.952 | INFO     | __main__:case2:153 - English verse: John 1:4
+2022-04-23 17:13:30.677 | INFO     | __main__:case2:155 - 4 In him was life, and the life was the light of men.
+2022-04-23 17:13:30.681 | INFO     | __main__:case2:149 - Japanese verse: John 1:5
+2022-04-23 17:13:39.001 | INFO     | __main__:case2:151 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:13:39.007 | INFO     | __main__:case2:153 - English verse: John 1:5
+2022-04-23 17:13:43.262 | INFO     | __main__:case2:155 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:15:00.226 | DEBUG    | __main__:case1:97 - Debugging single verse: John 1:4
+2022-04-23 17:15:02.865 | INFO     | __main__:case1:103 - Logging in...
+2022-04-23 17:15:08.960 | INFO     | __main__:case1:105 - Logged in.
+2022-04-23 17:15:08.966 | INFO     | __main__:case1:108 - Japanese verse: John 1:4
+2022-04-23 17:15:17.353 | INFO     | __main__:case1:110 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:15:17.357 | INFO     | __main__:case1:112 - English verse: John 1:4
+2022-04-23 17:15:22.443 | INFO     | __main__:case1:114 - 4 In him was life, and the life was the light of men.
+2022-04-23 17:15:22.446 | INFO     | __main__:case1:108 - Japanese verse: John 1:5
+2022-04-23 17:15:30.866 | INFO     | __main__:case1:110 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:15:30.869 | INFO     | __main__:case1:112 - English verse: John 1:5
+2022-04-23 17:15:35.189 | INFO     | __main__:case1:114 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:15:39.271 | DEBUG    | __main__:case2:120 - Debugging multi verse: John 1:2-5
+2022-04-23 17:15:41.412 | INFO     | __main__:case2:128 - Logging in...
+2022-04-23 17:15:47.577 | INFO     | __main__:case2:130 - Logged in.
+2022-04-23 17:15:47.584 | INFO     | __main__:case2:133 - Japanese verse: John 1:2
+2022-04-23 17:15:55.982 | INFO     | __main__:case2:135 - この方は、初めに神とともにおられた。
+2022-04-23 17:15:55.986 | INFO     | __main__:case2:137 - English verse: John 1:2
+2022-04-23 17:16:01.345 | INFO     | __main__:case2:139 - 2 He was in the beginning with God.
+2022-04-23 17:16:01.348 | INFO     | __main__:case2:133 - Japanese verse: John 1:3
+2022-04-23 17:16:09.686 | INFO     | __main__:case2:135 - すべてのものは、この方によって造られた。造られたもので、この方によらずにできたものは一つもなかった。
+2022-04-23 17:16:09.691 | INFO     | __main__:case2:137 - English verse: John 1:3
+2022-04-23 17:16:13.322 | INFO     | __main__:case2:139 - 3 All things were made through him, and without him was not any thing made that was made.
+2022-04-23 17:16:13.324 | INFO     | __main__:case2:133 - Japanese verse: John 1:4
+2022-04-23 17:16:21.637 | INFO     | __main__:case2:135 - この方にはいのちがあった。このいのちは人の光であった。
+2022-04-23 17:16:21.641 | INFO     | __main__:case2:137 - English verse: John 1:4
+2022-04-23 17:16:24.949 | INFO     | __main__:case2:139 - 4 In him was life, and the life was the light of men.
+2022-04-23 17:16:24.952 | INFO     | __main__:case2:133 - Japanese verse: John 1:5
+2022-04-23 17:16:33.293 | INFO     | __main__:case2:135 - 光は闇の中に輝いている。闇はこれに打ち勝たなかった。
+2022-04-23 17:16:33.297 | INFO     | __main__:case2:137 - English verse: John 1:5
+2022-04-23 17:16:36.868 | INFO     | __main__:case2:139 - 5 The light shines in the darkness, and the darkness has not overcome it.
+2022-04-23 17:19:20.955 | DEBUG    | __main__:case1:97 - Debugging single verse: John 1:4

@@ -4,6 +4,11 @@
 *.htm
 *.css
 Bible/
+*.png
 .pdf
+*.docx
+*.mkv
+*.pptx
 
 **/User_data
+

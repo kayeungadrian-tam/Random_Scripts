@@ -1,68 +1,99 @@
-from pptx import Presentation
+from modules.bible_verse import OnlineBibleVerse
+from modules.power_point import PowerPoint
+# from modules.word_handler import WordHandler
+from modules.word_handler import NewHandler
+
+import json
+
 from pptx.util import Inches, Cm
 from pptx.dml.color import ColorFormat, RGBColor
-
-
+from pptx.enum.text import PP_ALIGN
+from pptx.util import Pt
+from datetime import datetime
 
 title_img = "./assets/2022 John.png"
 background_img = "./assets/2022 John text.png"
 
+doc_path = "./demo2.docx"
 
-PPT = Presentation()
-# set width and height to 16 and 9 inches.
-PPT.slide_width = Cm(29.7)
-PPT.slide_height = Cm(21.0)
-
-blank_slide_layout = PPT.slide_layouts[6]
-slide = PPT.slides.add_slide(blank_slide_layout)
-left = top = Inches(0)
-
-width = Cm(29.7)
-height = Cm(21.0)
-
-pic = slide.shapes.add_picture(title_img, left, top, width=width, height=height)
-
-
-
-text_layout = PPT.slide_layouts[6]
-text_slide = PPT.slides.add_slide(text_layout)
-pic2 = text_slide.shapes.add_picture(background_img, left, top, width=width, height=height)
-
-
-english_text = '''
-[38] And Peter said to them, “Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.”
-'''
-japanese_text = '''
-そこで、ペテロは彼らに言った。「それぞれ罪を赦していただくために、悔い改めて、イエス・キリストの名によってバプテスマを受けなさい。そうすれば、賜物として聖霊を受けます。」
-'''
-left = top = width = height = Inches(1)
-txBox = text_slide.shapes.add_textbox(left, top, Cm(20), Cm(20))
-tf = txBox.text_frame
-tf.word_wrap = True
-p = tf.add_paragraph()
-p.font.color.rgb = RGBColor(255, 255, 255)
-p.text = english_text
-
-txBox = text_slide.shapes.add_textbox(left, top, width, height)
-p = tf.add_paragraph()
-tf.word_wrap = True
-p.font.color.rgb = RGBColor(255, 255, 255)
-p.text = japanese_text
+params = {
+    "title_img": title_img,
+    "background_img": background_img,
+    "slide_width": Cm(25.5),
+    "slide_height": Cm(14.3),
+    "font_size": Pt(20),
+    "verse_size": Pt(18),
+    "font_color": RGBColor(255, 255, 255),
+    "font_name": "Arial",
+    "pic_left": Cm(0),
+    "pic_top": Cm(0),
+    "text_margin": Cm(2),
+    "text_center": PP_ALIGN.CENTER,
+    "text_left": PP_ALIGN.LEFT,
+    "text_right": PP_ALIGN.RIGHT
+    
+}
+def book_handle(book):    
+    with open("./assets/books_dict.json", 'r', encoding='utf-8') as f:
+        books_dict = json.load(f)
+    data = books_dict[book]
+    return data
 
 
-# first_slide.shapes.title.text = "Creating a powerpoint using Python"
-# first_slide.placeholders[1].text = "Created by Tutorialpoints"
+
+def main():
+
+    # word_handler = WordHandler(doc_path)
+    word_handler = NewHandler(doc_path)
+    ppt = PowerPoint(**params)
+    bible = OnlineBibleVerse("./assets/credentials.json", "https://bible.prsi.org/ja/Account/Login")
+
+    tags = word_handler.get_tag()
 
 
-# Second_Layout = X.slide_layouts[5]
-# second_slide = X.slides.add_slide(Second_Layout)
 
+    for idx, key in enumerate(tags):
+        splitted = key.split(":")
+        
+        if len(splitted) == 2:
+            if splitted[0] == "PIC":
+                # print("PIC")
+                ppt.add_img_slide(f"PIC: {idx}")
+            elif splitted[0] == "PNT":
+                if splitted[1]:
+                    # print(splitted[1])
+                    ppt.add_point_slide("＊＊＊", splitted[1])
+        if len(splitted) == 3:
+            book = splitted[1].split(" ")[1]
+            chapter = int(splitted[1].split(" ")[2])
+            verses = splitted[2].split("-")
 
-# second_slide.shapes.title.text = "Second slide"
-# textbox = second_slide.shapes.add_textbox(Inches(3), Inches(1.5),Inches(3), Inches(1))
-# textframe = textbox.text_frame
-# paragraph = textframe.add_paragraph()
-# paragraph.text = "This is a paragraph in the second slide!"
+            if len(verses) == 2:
 
+                verse_start = int(verses[0])
+                verse_end = int(verses[1])
+                ja_verse_str, en_verse_str = bible.verse_str(book, chapter, f"{verse_start}-{verse_end}")
+                english = ""
+                japanese = ""
+                for verse in range(verse_start, verse_end+1):
+                    jp_text = bible.get_verse_ja(book, chapter, verse)
+                    japanese += jp_text
+                    en_text = bible.get_verse_en(book, chapter, verse)
+                    english += en_text
 
-PPT.save("test.pptx")
+                ppt.add_verse_slides(japanese, english, ja_verse_str, en_verse_str)
+
+            else:
+                ja_verse_str, en_verse_str = bible.verse_str(book, chapter, verses[0])
+
+                jp_text = bible.get_verse_ja(book, chapter, int(verses[0]))
+                en_text = bible.get_verse_en(book, chapter, int(verses[0]))
+
+                ppt.add_verse_slides(jp_text, en_text, ja_verse_str, en_verse_str)
+                
+
+    ppt.save()
+    bible.close()
+
+if __name__ == "__main__":
+    main()
