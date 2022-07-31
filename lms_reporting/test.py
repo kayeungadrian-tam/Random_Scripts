@@ -200,7 +200,9 @@ class PDFPSReporte:
         textData = ["User_id", "名前", "部署", "メール", "Tiempo Total"]
 
         fontSize = 8
-        centered = ParagraphStyle(name="centered", alignment=TA_CENTER)
+        centered = ParagraphStyle(
+            name="centered", alignment=TA_CENTER, fontName="GenShinGothic"
+        )
         for text in textData:
             ptext = "<font size='%s'><b>%s</b></font>" % (fontSize, text)
             titlesTable = Paragraph(ptext, centered)
