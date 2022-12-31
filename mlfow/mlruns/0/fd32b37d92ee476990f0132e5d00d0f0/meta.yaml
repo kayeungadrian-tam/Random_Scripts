@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/fd32b37d92ee476990f0132e5d00d0f0/artifacts
+end_time: 1672471293158
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fd32b37d92ee476990f0132e5d00d0f0
+run_name: awesome-sponge-489
+run_uuid: fd32b37d92ee476990f0132e5d00d0f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471293149
+status: 4
+tags: []
+user_id: adrian

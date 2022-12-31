@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/c763a4398368438494f1c1353bb8f78e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c763a4398368438494f1c1353bb8f78e
+run_name: redolent-bear-913
+run_uuid: c763a4398368438494f1c1353bb8f78e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471987385
+status: 1
+tags: []
+user_id: adrian

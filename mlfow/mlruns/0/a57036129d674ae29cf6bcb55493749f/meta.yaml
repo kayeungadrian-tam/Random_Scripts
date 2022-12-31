@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/a57036129d674ae29cf6bcb55493749f/artifacts
+end_time: 1672470352427
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a57036129d674ae29cf6bcb55493749f
+run_name: thundering-zebra-282
+run_uuid: a57036129d674ae29cf6bcb55493749f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672470350795
+status: 3
+tags: []
+user_id: adrian

@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/961eab44e32b4bbe836b7e503cad1443/artifacts
+end_time: 1672471157731
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 961eab44e32b4bbe836b7e503cad1443
+run_name: amusing-stoat-217
+run_uuid: 961eab44e32b4bbe836b7e503cad1443
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471156046
+status: 3
+tags: []
+user_id: adrian

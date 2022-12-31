@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/7c31d7ad25f84e41ba8d46c6dc7d2d04/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c31d7ad25f84e41ba8d46c6dc7d2d04
+run_name: upset-wolf-131
+run_uuid: 7c31d7ad25f84e41ba8d46c6dc7d2d04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471071724
+status: 1
+tags: []
+user_id: adrian

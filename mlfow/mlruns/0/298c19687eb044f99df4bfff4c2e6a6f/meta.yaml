@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/298c19687eb044f99df4bfff4c2e6a6f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 298c19687eb044f99df4bfff4c2e6a6f
+run_name: shivering-bird-243
+run_uuid: 298c19687eb044f99df4bfff4c2e6a6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471911391
+status: 1
+tags: []
+user_id: adrian

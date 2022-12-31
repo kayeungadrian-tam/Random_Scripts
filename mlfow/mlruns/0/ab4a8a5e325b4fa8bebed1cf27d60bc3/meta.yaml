@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/ab4a8a5e325b4fa8bebed1cf27d60bc3/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab4a8a5e325b4fa8bebed1cf27d60bc3
+run_name: peaceful-gnat-163
+run_uuid: ab4a8a5e325b4fa8bebed1cf27d60bc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471953795
+status: 1
+tags: []
+user_id: adrian

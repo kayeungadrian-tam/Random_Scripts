@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/3b93d1b2e424437f955403c1e2dd15a4/artifacts
+end_time: 1672470567870
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b93d1b2e424437f955403c1e2dd15a4
+run_name: defiant-lark-808
+run_uuid: 3b93d1b2e424437f955403c1e2dd15a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672470566062
+status: 3
+tags: []
+user_id: adrian

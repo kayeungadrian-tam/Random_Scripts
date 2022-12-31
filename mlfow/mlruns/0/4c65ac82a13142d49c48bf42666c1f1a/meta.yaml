@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/4c65ac82a13142d49c48bf42666c1f1a/artifacts
+end_time: 1672471388481
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4c65ac82a13142d49c48bf42666c1f1a
+run_name: abrasive-stoat-331
+run_uuid: 4c65ac82a13142d49c48bf42666c1f1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471386726
+status: 3
+tags: []
+user_id: adrian

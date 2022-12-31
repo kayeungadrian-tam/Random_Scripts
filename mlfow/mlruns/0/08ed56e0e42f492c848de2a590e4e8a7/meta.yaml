@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/08ed56e0e42f492c848de2a590e4e8a7/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 08ed56e0e42f492c848de2a590e4e8a7
+run_name: bald-frog-989
+run_uuid: 08ed56e0e42f492c848de2a590e4e8a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471444200
+status: 1
+tags: []
+user_id: adrian

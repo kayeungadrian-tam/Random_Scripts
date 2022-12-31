@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/320d8cceabf44469895754f6c093f77b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 320d8cceabf44469895754f6c093f77b
+run_name: orderly-sloth-858
+run_uuid: 320d8cceabf44469895754f6c093f77b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672470879602
+status: 1
+tags: []
+user_id: adrian

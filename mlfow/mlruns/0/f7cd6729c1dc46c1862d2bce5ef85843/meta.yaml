@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/f7cd6729c1dc46c1862d2bce5ef85843/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f7cd6729c1dc46c1862d2bce5ef85843
+run_name: adorable-seal-934
+run_uuid: f7cd6729c1dc46c1862d2bce5ef85843
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471672713
+status: 1
+tags: []
+user_id: adrian

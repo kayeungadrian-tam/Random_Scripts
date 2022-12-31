@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/e2fc1b47e09e4b749cb42366756a2dfa/artifacts
+end_time: 1672472041657
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e2fc1b47e09e4b749cb42366756a2dfa
+run_name: overjoyed-ant-144
+run_uuid: e2fc1b47e09e4b749cb42366756a2dfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672472007814
+status: 3
+tags: []
+user_id: adrian

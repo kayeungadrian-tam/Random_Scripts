@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/02f9ba6d7ace47cf80c837d1f89cf8dc/artifacts
+end_time: 1672470089383
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 02f9ba6d7ace47cf80c837d1f89cf8dc
+run_name: intrigued-ray-208
+run_uuid: 02f9ba6d7ace47cf80c837d1f89cf8dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672470087834
+status: 3
+tags: []
+user_id: adrian

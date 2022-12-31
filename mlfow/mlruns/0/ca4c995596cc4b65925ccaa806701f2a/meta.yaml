@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/ca4c995596cc4b65925ccaa806701f2a/artifacts
+end_time: 1672471325201
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ca4c995596cc4b65925ccaa806701f2a
+run_name: big-grouse-812
+run_uuid: ca4c995596cc4b65925ccaa806701f2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471323528
+status: 3
+tags: []
+user_id: adrian

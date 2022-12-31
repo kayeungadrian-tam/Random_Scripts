@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/a56f57e638014d27b97b8b366bfa50d0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a56f57e638014d27b97b8b366bfa50d0
+run_name: abundant-flea-887
+run_uuid: a56f57e638014d27b97b8b366bfa50d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471459337
+status: 1
+tags: []
+user_id: adrian

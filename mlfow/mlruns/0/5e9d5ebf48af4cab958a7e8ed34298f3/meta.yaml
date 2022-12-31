@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/Personal/Random_Scripts/mlfow/mlruns/0/5e9d5ebf48af4cab958a7e8ed34298f3/artifacts
+end_time: 1672471306790
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5e9d5ebf48af4cab958a7e8ed34298f3
+run_name: capricious-crow-591
+run_uuid: 5e9d5ebf48af4cab958a7e8ed34298f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672471306773
+status: 4
+tags: []
+user_id: adrian
